@@ -1,0 +1,133 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,700';
+
+#intro, #input, #contestants, #game, #results {
+  display: none;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 80px;
+  padding-top: 25vh;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+button {
+  padding: 12px 25px;
+  color: #444;
+  color: rgba(0, 0, 0, .8);
+  border: none;
+  background-color: #E6E6E6;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+button:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .15) inset, 0 0 6px rgba(0, 0, 0, .2) inset;
+}
+
+#intro {
+  text-align: center;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  button {
+    margin-top: 20px;
+    background-color: #00AD7C;
+    color: #fff;
+  }
+}
+
+#input {
+  text-align: center;
+  textarea {
+    height: 250px;
+    width: 180px;
+    margin: 20px 0;
+    font-family: "Open Sans", sans-serif;
+    border: none !important;
+    background-color: darken(#E6E6E6, 10%) !important;
+    border-radius: 3px;
+    padding: 5px;
+  }
+}
+
+#contestants {
+  text-align: center;
+  h1 {
+    padding-top: 20vh;
+    margin-bottom: 20px;
+  }
+  #contestantsList {
+    div {
+      text-align: center;
+      display: inline-block;
+      margin: 40px;
+      img {
+        width: 150px;
+        height: 123px;
+      }
+    }
+  }
+  #race {
+    background-color: #00AD7C;
+    color: #fff;
+  }
+  #cancel {
+    background-color: #F85F73;
+    color: #fff;
+  }
+}
+
+#game {
+  #gameContainer {
+    padding-top: 50px;
+    img {
+      left: 20px;
+      position: relative;
+      display: block;
+      padding-top: 40px;
+      width: 100px;
+      height: 85px;
+      transform: rotate(90deg);
+      backface-visibility: hidden;
+    }
+  }
+  background-size: cover;
+  background: url("../img/bg.png");
+  background-position-x: 1px;
+  background-position-y: 75%;
+}
+
+#results {
+  text-align: center;
+  canvas {
+    margin-top: 10px;
+  }
+  button {
+    margin-top: 15px;
+    background-color: #1F4E5F;
+    color: #fff;
+  }
+  canvas {
+  }
+}
